@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>SignupServlet</servlet-name>
+		<servlet-class>com.customer.project.SignupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignupServlet</servlet-name>
+		<url-pattern>/SignupServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginpageServlet</servlet-name>
+		<servlet-class>com.customer.project.LoginpageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginpageServlet</servlet-name>
+		<url-pattern>/LoginpageServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.customer.project.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>StoreCustomerDetails</servlet-name>
+		<servlet-class>com.customer.project.StoreCustomerDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StoreCustomerDetails</servlet-name>
+		<url-pattern>/storecustomerdetails</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RetrieveCustomerDetails</servlet-name>
+		<servlet-class>com.customer.project.RetrieveCustomerDetails</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RetrieveCustomerDetails</servlet-name>
+		<url-pattern>/retrieveCustomerDetails</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>loginpage.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
